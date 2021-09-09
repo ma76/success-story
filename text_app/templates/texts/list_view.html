@@ -1,0 +1,16 @@
+{% extends 'Home-Page.html' %}
+
+{% block content %}
+    {% for text in object_list %}
+    <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+{#            <img src="{{ photo.image.url }}" width="100%" >#}
+                <div class="caption">
+                    <h3>{{ text.text }}</h3>
+                    <p>{{ text.title }}</p>
+                    <p><a href="#" class="btn btn-primary" role="button">جزئیات</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

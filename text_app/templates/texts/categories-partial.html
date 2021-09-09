@@ -1,0 +1,5 @@
+{% for category in categories %}
+<div class="list-group">
+                <a href="/texts/{{ category.id }}" class="list-group-item active">{{ category.title }}</a>
+              </div>
+{% endfor %}
